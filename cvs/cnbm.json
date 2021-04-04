@@ -1,0 +1,172 @@
+{
+    "basic":
+    {
+        "name": "谢嘉麒",
+        "job": "架构师",
+        "birth": "1989.05",
+        "cell": "15942614739",
+        "wechat": "xjq_314",
+        "email": "xjq_314@qq.com"
+    },
+    "education":
+    [
+        {
+            "name": "dut",
+            "text": "大连理工大学",
+            "icon": "dut.png",
+            "start": "2007.09",
+            "end": "2011.06",
+            "degree": "工学学士",
+            "major": "集成电路设计与制造专业",
+            "school": "电子信息工程学院"
+        }
+    ],
+    "skillset":
+    [
+        {
+            "name": "digital",
+            "text": "企业数字化转型解决方案"
+        },
+        {
+            "name": "csp",
+            "text": "企业应用公有云解决方案"
+        },
+        {
+            "name": "openstack",
+            "text": "企业私有云解决方案"
+        },
+        {
+            "name": "container",
+            "text": "金融混合云方案，应用容器改造"
+        },
+        {
+            "name": "network",
+            "text": "大规模分布式网络"
+        },
+        {
+            "name": "linux",
+            "text": "Linux系统专家"
+        },
+        {
+            "name": "coding",
+            "text": "Python开发，API设计"
+        },
+        {
+            "name": "presales",
+            "text": "公共演讲，售前经验，POC"
+        }
+    ],
+    "certs":
+    [
+        {
+            "name": "SEA",
+            "text": "SUSE Enterprise Architect",
+            "icon": "suse.png"
+        },
+        {
+            "name": "SCI",
+            "text": "SUSE Certified Instructor",
+            "icon": "suse.png"
+        },
+        {
+            "name": "SCE",
+            "text": "SUSE Certified Engineer",
+            "icon": "suse.png"
+        },
+        {
+            "name": "ETCP",
+            "text": "ETCP",
+            "icon": "ericsson.png"
+        },
+        {
+            "name": "CCNA",
+            "text": "CCNA",
+            "icon": "cisco.png"
+        }
+    ],
+    "portfolio":
+    [
+        {
+            "name": "webinar_sap",
+            "text": "创新无处不在，SUSE x SAP 圆桌三人行",
+            "url": "https://webinar.easylaa.com/webinar/Vodondemand1.aspx?baseID=32384&r=456c4124d9694f97a10c51e76fe67f7e",
+            "icon": "qrcode_v.png"
+        }
+    ],
+    "career":
+    [
+        {
+            "name": "SUSE",
+            "text": "SUSE",
+            "icon": "suse.png",
+            "start": "2018.06",
+            "end": "present",
+            "title": "售前工程师",
+            "projects":
+            [
+                {
+                    "name": "rancher",
+                    "text": "帮助客户进行企业混合云设计，对应用进行容器化改造，并辅助开发运维团队制定相应技术标准"
+                },
+                {
+                    "name": "csp",
+                    "text": "与 CSP 合作设计企业进行应用云迁移方案，精通AWS，Azure，Aliyun等主流公有云解决方案"
+                },
+                {
+                    "name": "opensource",
+                    "text": "通过 Linux，OpenStack, Ceph, K8S 等开源技术为客户提供企业数字化转型解决方案"
+                },
+                {
+                    "name": "customer",
+                    "text": "协调客户合作伙伴进保障项目进度，按时交付"
+                },
+                {
+                    "name": "enablement",
+                    "text": "在峰会和 Webinar 进行技术宣讲"
+                }
+            ]
+        },
+        {
+            "name": "NRJ",
+            "text": "Ericsson Japan",
+            "icon": "ericsson.png",
+            "start": "2014.10",
+            "end": "2018.05",
+            "title": "云架构师",
+            "projects":
+            [
+                {
+                    "name": "nfv",
+                    "text": "Docomo NFV 项目本地化方案设计，测试，交付"
+                },
+                {
+                    "name": "automation",
+                    "text": "NFV项目自动化测试系统开发"
+                },
+                {
+                    "name": "iaas",
+                    "text": "企业私有云平台方案设计，部署，运维"
+                }
+            ]
+        },
+        {
+            "name": "CBC",
+            "text": "爱立信中国",
+            "icon": "ericsson.png",
+            "start": "2011.07",
+            "end": "2014.09",
+            "title": "系统集成工程师",
+            "projects":
+            [
+                {
+                    "name": "si",
+                    "text": "2G，3G，LTE 核心网系统集成"
+                },
+                {
+                    "name": "swdp",
+                    "text": "AXE 系统补丁测试"
+                }
+            ]
+        }
+    ]
+}

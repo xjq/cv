@@ -42,13 +42,15 @@ def cnbm():
     certs = cv_dict['certs']
     education= cv_dict['education']
     career = cv_dict['career']
+    portfolio = cv_dict['portfolio']
 
     return render_template('cnbm.html', \
                             basic=basic, \
                             skillset=skillset, \
                             certs=certs, \
                             education=education, \
-                            career=career)
+                            career=career, \
+                            portfolio=portfolio)
 
 if __name__ == "__main__":
     

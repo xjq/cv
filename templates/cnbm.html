@@ -72,6 +72,15 @@
 					</div>
 				</div>
 				{% endfor %}
+				<div id="portfolio-container">
+					<h2 class="grey">方案讲解</h2>
+					{% for item in portfolio %}
+					<li>
+						<a href="{{ item.url }}">{{ item.text }}</a>
+						<img class="qr-icon" src="static/{{ item.icon }}"/>
+					</li>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 

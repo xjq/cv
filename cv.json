@@ -1,0 +1,127 @@
+{
+    "name": "Xie Jiaqi",
+    "job": "Architect",
+    "birth": "1989.05",
+    "cell": "15942614739",
+    "wechat": "xjq_314",
+    "mail": "xjq_314@qq.com",
+    "education":
+    [
+        {
+            "name": "DUT",
+            "icon": "dut.png",
+            "start": "2007.09",
+            "end": "2011.06",
+            "degree": "Bachelor of engineering",
+            "major": "IC"
+        }
+    ],
+    "skillset":
+    [
+        {
+            "name": "hard",
+            "text": "Linux, Python"
+        },
+        {
+            "name": "industry",
+            "text": "Manufactory, Finance, Telecommunication"
+        },
+        {
+            "name": "soft",
+            "text": "enablement"
+        },
+        {
+            "name": "language",
+            "text": "fluent orale/written englist"
+        }
+    ],
+    "cert":
+    [
+        {
+            "name": "CCNA",
+            "icon": "cisco.png"
+        },
+        {
+            "name": "ETCP",
+            "icon": "ericsson.png"
+        },
+        {
+            "name": "SEA",
+            "icon": "suse.png"
+        },
+        {
+            "name": "SCI",
+            "icon": "suse.png"
+        },
+        {
+            "name": "CKA",
+            "icon": "cncf.png"
+        }
+    ],
+    "portfolio":
+    [
+        {
+            "name": "AWS HANA QUICK START",
+            "icon": "aws.png",
+            "url": "www.suse.com"
+        },
+        {
+            "name": "AZURE Webinar",
+            "icon": "azure.png",
+            "url": "www.suse.com"           
+        }
+    ],
+    "career":
+    [
+        {
+            "name": "SUSE",
+            "icon": "suse.png",
+            "start": "2018.6",
+            "end": "",
+            "job": "Enterprise Solution Architect, SAP Specialist",
+            "projects":
+            [
+                {
+                    "name": "csp",
+                    "text": "help design csp solutions"
+                },
+                {
+                    "name": "sap",
+                    "text": "help design sap solutions"
+                }
+            ]
+        },
+        {
+            "name": "Ericsson Japan",
+            "icon": "ericsson.png",
+            "start": "2014.10",
+            "end": "2018.05",
+            "job": "Cloud solution architect",
+            "projects":
+            [
+                {
+                    "name": "NFV",
+                    "text": "help design NFV solutions"
+                },
+                {
+                    "name": "distributed system",
+                    "text": "help design distributed systems"
+                }
+            ]
+        },
+        {
+            "name": "Ericsson China",
+            "icon": "ericsson.png",
+            "start": "2011.07",
+            "end": "2014.09",
+            "job": "Integration Engineer",
+            "projects":
+            [
+                {
+                    "name": "3G",
+                    "text": "help design 3G solutions"
+                }
+            ]
+        }
+    ]
+}

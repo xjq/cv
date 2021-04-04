@@ -10,86 +10,77 @@
 		<div id="header">
 			
 			<div id="name-container">
-				<h1 class="white">谢嘉麒</h1>
-				<h3 class="white">架构师</h3>
+				<h1 class="white">{{ basic.name }}</h1>
+				<h3 class="white">{{ basic.job }}</h3>
 			</div>
 			<div id="contact-container">
-				<p class="white">生月: 1989.05</p>
-				<p class="white">电话: 15942614739</p>
-				<p class="white">微信: xjq_314</p>
-				<p class="white">邮件: xjq_314@qq.com</p>
+				<p class="white">生月 : {{ basic.birth }}</p>
+				<p class="white">电话 : {{ basic.cell }}</p>
+				<p class="white">微信 : {{ basic.wechat }}</p>
+				<p class="white">邮件 : {{ basic.email }}</p>
 			</div>
 			<img class="big-icon" src="static/qrcode.png"/>
 		</div>
 
 		<div id="side-container">
 			<div id="skill-container">
-				<h2>技术领域</h2>
-				<p>Python, Linux, MySQL</p>
-				<p>SAP, ERP, SCM</p>
-				<p>海外工作经历，英文熟练听说</p>
+				<h2 class="grey">专业领域</h2>
+				{% for skill in skillset %}
+				<p>{{ skill.text }}</p>
+				{% endfor %}
 			</div>
 			<div id="certification-container">
-				<h2>资格认证</h2>
-				<div id=cert-container">
-					<img class="small-icon" src="static/cisco.png"/>
-					<p>CCNA</p>
+				<h2 class="grey">技术认证</h2>
+				{% for cert in certs %}
+				<div id="cert-container">
+					<img class="small-icon" src="static/{{ cert.icon }}"/>
+					<p>{{ cert.text }}</p>
 				</div>
-				<div id=cert-container">
-					<img class="small-icon" src="static/suse.png"/>
-					<p>SUSE Enterprise Architect</p>
-				</div>
-				<div id=cert-container">
-					<img class="small-icon" src="static/suse.png"/>
-					<p>SUSE Certified Instructor</p>
-				</div>
+				{% endfor %}
 			</div>
 			<div id="education-container">
-				<h2>教育背景</h2>
+				<h2 class="grey">教育背景</h2>
+				{% for edu in education %}
 				<div id=cert-container">
-					<img class="small-icon" src="static/dut.png"/>
-					<p>大连理工大学</p>
+					<img class="small-icon" src="static/{{ edu.icon }}"/>
+					<p>{{ edu.text }}</p>
 				</div>
-				<p>电子信息工程学院<br>集成电路设计与制造专业<br>工学学士</p>
+				<p>{{ edu.school }}<br>{{ edu.major}}<br>{{ edu.degree }}</p>
+				{% endfor %}
 			</div>
 		</div>
 
 		<div id="main-container">
 			<div id="company-container">
-				<h2>职业经历</h2>
+				<h2 class="grey">职业履历</h2>
+				{% for company in career %}
 				<div id="company">
 					<div id="company-header">
 						<div id="company-icon">
-							<img class="middle-icon" src="static/suse.png"/>
-							<h2>SUSE</h2>
+							<img class="middle-icon" src="static/{{ company.icon }}"/>
+							<h2>{{ company.text }}</h2>
 						</div>
-						<p class="right">2018.06 ~ present</p>
-						<p class="left">企业解决方案架构师</p>
+						<p class="right">{{ company.start }} ~ {{ company.end }}</p>
+						<p class="left">{{ company.title }}</p>
 					</div>
 					<div id="company-project">
 						<ul>
-							<li>傲剑速度哦死哦叫阿就哦三等奖附件</li>
-							<li>考四级莱克斯的房间累计亏损龙卷风</li>
-						</ul>
-						
-					</div>
-				</div>
-				<div id="company">
-					<div id="company-header">
-						<div id="company-icon">
-							<img class="middle-icon" src="static/ericsson.png"/>
-							<h2>ERICSSON Japan</h2>
-						</div>
-						<p class="right">2014.06 ~ 2018.06</p>
-						<p class="left">云解决方案架构师</p>
-					</div>
-					<div id="company-project">
-						<ul>
-							<li>协助企业设计分布式系统</li>
-							<li>帮助企业上云</li>
+							{% for project in company.projects %}
+							<li>{{ project.text }}</li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
+				{% endfor %}
+			</div>
+			<div id="portfolio-container">
+				<h2 class="grey">技术布道</h2>
+				{% for item in portfolio %}
+				<li>
+					<a href="{{ item.url }}">{{ item.text }}</a>
+					<img class="qr-icon" src="static/{{ item.icon }}"/>
+				</li>
+				{% endfor %}
 			</div>
 		</div>
 

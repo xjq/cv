@@ -1,125 +1,174 @@
 {
-    "name": "Xie Jiaqi",
-    "job": "Architect",
-    "birth": "1989.05",
-    "cell": "15942614739",
-    "wechat": "xjq_314",
-    "mail": "xjq_314@qq.com",
+    "basic":
+    {
+        "name": "谢嘉麒",
+        "job": "架构师",
+        "birth": "1989.05",
+        "cell": "15942614739",
+        "wechat": "xjq_314",
+        "email": "xjq_314@qq.com"
+    },
     "education":
     [
         {
-            "name": "DUT",
+            "name": "dut",
+            "text": "大连理工大学",
             "icon": "dut.png",
             "start": "2007.09",
             "end": "2011.06",
-            "degree": "Bachelor of engineering",
-            "major": "IC"
+            "degree": "工学学士",
+            "major": "集成电路设计与制造专业",
+            "school": "电子信息工程学院"
         }
     ],
     "skillset":
     [
         {
-            "name": "hard",
-            "text": "Linux, Python"
+            "name": "digital",
+            "text": "企业数字化转型解决方案"
         },
         {
-            "name": "industry",
-            "text": "Manufactory, Finance, Telecommunication"
+            "name": "csp",
+            "text": "企业应用公有云解决方案"
         },
         {
-            "name": "soft",
-            "text": "enablement"
+            "name": "container",
+            "text": "企业混合云方案，应用容器改造"
+        },
+        {
+            "name": "sap",
+            "text": "SAP高可用解决方案"
+        },
+        {
+            "name": "nfv",
+            "text": "电信NFV解决方案"
+        },
+        {
+            "name": "linux",
+            "text": "Linux系统专家"
+        },
+        {
+            "name": "coding",
+            "text": "Python开发，API设计"
+        },
+        {
+            "name": "enablement",
+            "text": "技术布道师，合作伙伴赋能"
         },
         {
             "name": "language",
-            "text": "fluent orale/written englist"
+            "text": "海外工作经历，流利英语口语"
         }
     ],
-    "cert":
+    "certs":
     [
         {
-            "name": "CCNA",
-            "icon": "cisco.png"
-        },
-        {
-            "name": "ETCP",
-            "icon": "ericsson.png"
-        },
-        {
             "name": "SEA",
+            "text": "SUSE Enterprise Architect",
             "icon": "suse.png"
         },
         {
             "name": "SCI",
+            "text": "SUSE Certified Instructor",
             "icon": "suse.png"
         },
         {
-            "name": "CKA",
-            "icon": "cncf.png"
+            "name": "SCE",
+            "text": "SUSE Certified Engineer",
+            "icon": "suse.png"
+        },
+        {
+            "name": "ETCP",
+            "text": "ETCP",
+            "icon": "ericsson.png"
+        },
+        {
+            "name": "CCNA",
+            "text": "CCNA",
+            "icon": "cisco.png"
         }
     ],
     "portfolio":
     [
         {
-            "name": "AWS HANA QUICK START",
-            "icon": "aws.png",
-            "url": "www.suse.com"
-        },
-        {
-            "name": "AZURE Webinar",
-            "icon": "azure.png",
-            "url": "www.suse.com"           
+            "name": "webinar_sap",
+            "text": "创新无处不在，SUSE x SAP 圆桌三人行",
+            "url": "https://webinar.easylaa.com/webinar/Vodondemand1.aspx?baseID=32384&r=456c4124d9694f97a10c51e76fe67f7e",
+            "icon": "qrcode_v.png"
         }
     ],
     "career":
     [
         {
             "name": "SUSE",
+            "text": "SUSE",
             "icon": "suse.png",
-            "start": "2018.6",
-            "end": "",
-            "job": "Enterprise Solution Architect, SAP Specialist",
+            "start": "2018.06",
+            "end": "present",
+            "title": "企业解决方案架构师",
             "projects":
             [
                 {
-                    "name": "csp",
-                    "text": "help design csp solutions"
+                    "name": "sap",
+                    "text": "为客户和渠道提供 SAP S/4HANA 解决方案设计，POC支持"
                 },
                 {
-                    "name": "sap",
-                    "text": "help design sap solutions"
+                    "name": "csp",
+                    "text": "与 CSP 合作帮助企业进行应用云迁移，熟悉AWS，Azure，Aliyun等主流公有云解决方案"
+                },
+                {
+                    "name": "rancher",
+                    "text": "帮助客户进行企业混合云设计，对应用进行容器化改造，并辅助开发运维团队制定相应技术标准"
+                },
+                {
+                    "name": "opensource",
+                    "text": "通过 Linux，OpenStack, Ceph, K8S 等开源技术为客户提供企业数字化转型解决方案"
+                },
+                {
+                    "name": "enablement",
+                    "text": "在峰会和 Webinar 上对用户和合作伙伴进行赋能"
                 }
             ]
         },
         {
-            "name": "Ericsson Japan",
+            "name": "NRJ",
+            "text": "Ericsson Japan",
             "icon": "ericsson.png",
             "start": "2014.10",
             "end": "2018.05",
-            "job": "Cloud solution architect",
+            "title": "云解决方案架构师",
             "projects":
             [
                 {
-                    "name": "NFV",
-                    "text": "help design NFV solutions"
+                    "name": "nfv",
+                    "text": "Docomo NFV 项目本地化方案设计，测试，交付"
                 },
                 {
-                    "name": "distributed system",
-                    "text": "help design distributed systems"
+                    "name": "automation",
+                    "text": "NFV项目自动化测试系统开发"
+                },
+                {
+                    "name": "iaas",
+                    "text": "企业私有云平台方案设计，部署，运维"
                 }
             ]
         },
         {
-            "name": "Ericsson China",
+            "name": "CBC",
+            "text": "爱立信中国",
             "icon": "ericsson.png",
             "start": "2011.07",
             "end": "2014.09",
-            "job": "Integration Engineer",
+            "title": "系统集成工程师",
             "projects":
             [
                 {
-                    "name": "3G",
-                    "text": "help design 3G solutions"
+                    "name": "si",
+                    "text": "2G，3G，LTE 核心网系统集成"
+                },
+                {
+                    "name": "swdp",
+                    "text": "AXE 系统补丁测试"
                 }
             ]
         }

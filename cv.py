@@ -1,22 +1,34 @@
+# -*- coding: UTF-8 -*-
 from flask import Flask
 from flask import render_template
 import json
+import io
 
 
 app = Flask(__name__)
-#f = open('cv.json')
-#cv_text = f.readlines()
-#print cv_text
-#cv_dict = json.loads(cv_text)
-#f.close()
-
-#print cv_dict
 
 
 @app.route('/')
 def cv():
+    f = io.open('cv.json', 'r', encoding='utf-8')
+    cv_text = f.read()
+    cv_dict = json.loads(cv_text)
+    f.close()
 
-    return render_template('cv.html')
+    basic = cv_dict['basic']
+    skillset = cv_dict['skillset']
+    certs = cv_dict['certs']
+    education= cv_dict['education']
+    career = cv_dict['career']
+    portfolio = cv_dict['portfolio']
+
+    return render_template('cv.html', \
+                            basic=basic, \
+                            skillset=skillset, \
+                            certs=certs, \
+                            education=education, \
+                            career=career, \
+                            portfolio=portfolio)
 
 if __name__ == "__main__":
     

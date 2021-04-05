@@ -108,7 +108,7 @@
             "text": "SUSE",
             "icon": "suse.png",
             "start": "2018.06",
-            "end": "present",
+            "end": "现在",
             "title": "企业解决方案架构师",
             "projects":
             [
@@ -118,7 +118,7 @@
                 },
                 {
                     "name": "csp",
-                    "text": "与 CSP 合作帮助企业进行应用云迁移，熟悉AWS，Azure，Aliyun等主流公有云解决方案"
+                    "text": "与 CSP 合作设计企业进行应用云迁移方案，熟悉AWS，Azure，Aliyun等主流公有云解决方案"
                 },
                 {
                     "name": "rancher",

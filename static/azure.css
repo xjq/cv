@@ -18,7 +18,7 @@ p.white{
 #header{
     width:755px; 
     height:186px; 
-    background-color: rgb(24, 107, 79);
+    background-color: rgb(38, 92, 192);
 }
 
 #side-container{
@@ -120,5 +120,5 @@ h3.left{
 }
 
 h2.grey{
-    color:rgb(24, 107, 79);
+    color:rgb(38, 92, 192);
 }

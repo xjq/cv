@@ -52,6 +52,28 @@ def cnbm():
                             career=career, \
                             portfolio=portfolio)
 
+@app.route('/azure')
+def azure():
+    f = io.open('cvs/azure.json', 'r', encoding='utf-8')
+    cv_text = f.read()
+    cv_dict = json.loads(cv_text)
+    f.close()
+
+    basic = cv_dict['basic']
+    skillset = cv_dict['skillset']
+    certs = cv_dict['certs']
+    education= cv_dict['education']
+    career = cv_dict['career']
+    portfolio = cv_dict['portfolio']
+
+    return render_template('azure.html', \
+                            basic=basic, \
+                            skillset=skillset, \
+                            certs=certs, \
+                            education=education, \
+                            career=career, \
+                            portfolio=portfolio)
+
 if __name__ == "__main__":
     
     app.debug = True

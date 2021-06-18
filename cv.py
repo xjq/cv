@@ -8,9 +8,9 @@ import io
 app = Flask(__name__)
 
 
-@app.route('/')
-def cv():
-    f = io.open('cvs/cv.json', 'r', encoding='utf-8')
+@app.route('/cv/<code>')
+def cv(code):
+    f = io.open('cvs/' + code + '.json', 'r', encoding='utf-8')
     cv_text = f.read()
     cv_dict = json.loads(cv_text)
     f.close()
@@ -22,79 +22,14 @@ def cv():
     career = cv_dict['career']
     portfolio = cv_dict['portfolio']
 
-    return render_template('cv.html', \
+    return render_template( code + '.html', \
                             basic=basic, \
                             skillset=skillset, \
                             certs=certs, \
                             education=education, \
                             career=career, \
                             portfolio=portfolio)
-
-@app.route('/tencent')
-def tencent():
-    f = io.open('cvs/tencent.json', 'r', encoding='utf-8')
-    cv_text = f.read()
-    cv_dict = json.loads(cv_text)
-    f.close()
-
-    basic = cv_dict['basic']
-    skillset = cv_dict['skillset']
-    certs = cv_dict['certs']
-    education= cv_dict['education']
-    career = cv_dict['career']
-    portfolio = cv_dict['portfolio']
-
-    return render_template('tencent.html', \
-                            basic=basic, \
-                            skillset=skillset, \
-                            certs=certs, \
-                            education=education, \
-                            career=career, \
-                            portfolio=portfolio)
-
-@app.route('/cnbm')
-def cnbm():
-    f = io.open('cvs/cnbm.json', 'r', encoding='utf-8')
-    cv_text = f.read()
-    cv_dict = json.loads(cv_text)
-    f.close()
-
-    basic = cv_dict['basic']
-    skillset = cv_dict['skillset']
-    certs = cv_dict['certs']
-    education= cv_dict['education']
-    career = cv_dict['career']
-    portfolio = cv_dict['portfolio']
-
-    return render_template('cnbm.html', \
-                            basic=basic, \
-                            skillset=skillset, \
-                            certs=certs, \
-                            education=education, \
-                            career=career, \
-                            portfolio=portfolio)
-
-@app.route('/azure')
-def azure():
-    f = io.open('cvs/azure.json', 'r', encoding='utf-8')
-    cv_text = f.read()
-    cv_dict = json.loads(cv_text)
-    f.close()
-
-    basic = cv_dict['basic']
-    skillset = cv_dict['skillset']
-    certs = cv_dict['certs']
-    education= cv_dict['education']
-    career = cv_dict['career']
-    portfolio = cv_dict['portfolio']
-
-    return render_template('azure.html', \
-                            basic=basic, \
-                            skillset=skillset, \
-                            certs=certs, \
-                            education=education, \
-                            career=career, \
-                            portfolio=portfolio)
+                            
 
 if __name__ == "__main__":
     

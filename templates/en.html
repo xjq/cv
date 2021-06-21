@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV</title>
+		<link href="static/cv.css" rel="stylesheet" type="text/css"/>  
+	</head>
+	<body>
+
+		<div id="header">
+			
+			<div id="name-container">
+				<h1 class="white">{{ basic.name }}</h1>
+				<h3 class="white">{{ basic.job }}</h3>
+			</div>
+			<div id="contact-container">
+				<p class="white">Birth : {{ basic.birth }}</p>
+				<p class="white">Tel : {{ basic.cell }}</p>
+				<p class="white">Wechat : {{ basic.wechat }}</p>
+				<p class="white">Mail : {{ basic.email }}</p>
+			</div>
+			<img class="big-icon" src="static/qrcode.png"/>
+		</div>
+
+		<div id="side-container">
+			<div id="skill-container">
+				<h2 class="grey">Skill</h2>
+				{% for skill in skillset %}
+				<p>{{ skill.text }}</p>
+				{% endfor %}
+			</div>
+			<div id="certification-container">
+				<h2 class="grey">Certification</h2>
+				{% for cert in certs %}
+				<div id="cert-container">
+					<img class="small-icon" src="static/{{ cert.icon }}"/>
+					<p>{{ cert.text }}</p>
+				</div>
+				{% endfor %}
+			</div>
+			<div id="education-container">
+				<h2 class="grey">Education</h2>
+				{% for edu in education %}
+				<div id=cert-container">
+					<img class="small-icon" src="static/{{ edu.icon }}"/>
+					<p>{{ edu.text }}</p>
+				</div>
+				<p>{{ edu.school }}<br>{{ edu.major}}<br>{{ edu.degree }}</p>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div id="main-container">
+			<div id="company-container">
+				<h2 class="grey">Career</h2>
+				{% for company in career %}
+				<div id="company">
+					<div id="company-header">
+						<div id="company-icon">
+							<img class="middle-icon" src="static/{{ company.icon }}"/>
+							<h2>{{ company.text }}</h2>
+						</div>
+						<p class="right">{{ company.start }} ~ {{ company.end }}</p>
+						<p class="left">{{ company.title }}</p>
+					</div>
+					<div id="company-project">
+						<ul>
+							{% for project in company.projects %}
+							<li>{{ project.text }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div id="portfolio-container">
+				<h2 class="grey">Evangelism</h2>
+				{% for item in portfolio %}
+				<li>{{ item.text }}</li>
+				{% endfor %}
+			</div>
+		</div>
+
+	</body>
+</html>

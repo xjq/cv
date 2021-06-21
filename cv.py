@@ -8,8 +8,9 @@ import io
 app = Flask(__name__)
 
 
-@app.route('/cv/<code>')
-def cv(code):
+@app.route('/')
+def cv():
+    code = 'en'
     f = io.open('cvs/' + code + '.json', 'r', encoding='utf-8')
     cv_text = f.read()
     cv_dict = json.loads(cv_text)

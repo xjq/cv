@@ -1,0 +1,194 @@
+{
+    "basic":
+    {
+        "name": "Jiaqi Xie",
+        "job": "Sales Engineer",
+        "birth": "1989.05",
+        "cell": "15942614739",
+        "wechat": "xjq_314",
+        "email": "jiaqi.xie@suse.com"
+    },
+    "education":
+    [
+        {
+            "name": "dut",
+            "text": "Dalian University of Technology",
+            "icon": "dut.png",
+            "start": "2007.09",
+            "end": "2011.06",
+            "degree": "Bachelor of Engineering",
+            "major": "Integrated Circuits",
+            "school": "School of Electronics and Information Engineering"
+        }
+    ],
+    "skillset":
+    [
+        {
+            "name": "suse",
+            "text": "SUSE product"
+        },
+        {
+            "name": "rancher",
+            "text": "Rancher product"
+        },
+        {
+            "name": "sap",
+            "text": "SAP joint solution"
+        },
+        {
+            "name": "pre-sales",
+            "text": "Technical sales"
+        },
+        {
+            "name": "enablement",
+            "text": "Technical enablement"
+        },
+        {
+            "name": "coding",
+            "text": "Python"
+        },
+        {
+            "name": "video",
+            "text": "Video creation"
+        },
+        {
+            "name": "language",
+            "text": "Excellent English"
+        },
+        {
+            "name": "internetional",
+            "text": "Overseas work experience"
+        }
+    ],
+    "certs":
+    [
+        {
+            "name": "SEA",
+            "text": "SUSE Enterprise Architect",
+            "icon": "suse.png"
+        },
+        {
+            "name": "SCI",
+            "text": "SUSE Certified Instructor",
+            "icon": "suse.png"
+        },
+        {
+            "name": "SCE",
+            "text": "SUSE Certified Engineer",
+            "icon": "suse.png"
+        },
+        {
+            "name": "ETCP",
+            "text": "ETCP",
+            "icon": "ericsson.png"
+        },
+        {
+            "name": "CCNA",
+            "text": "CCNA",
+            "icon": "cisco.png"
+        }
+    ],
+    "portfolio":
+    [
+        {
+            "name": "webinar_cap",
+            "text": "Webinar: 容器时代来临(Chinese)"
+        },
+        {
+            "name": "webinar_cd",
+            "text": "Webinar: 老司机和你聊应用交付(Chinese)"
+        },
+        {
+            "name": "salescast_caasp",
+            "text": "Salescast: CAASP4.0"
+        },
+        {
+            "name": "salescast_cap",
+            "text": "Salescast: CAP on Azure"
+        },
+        {
+            "name": "webinar_ses",
+            "text": "Webinar: 软件定义存储容器化之路(Chinese)"
+        },
+        {
+            "name": "salescast_caaspair",
+            "text": "Salescast: CAASP Airgap Deployment"
+        },
+        {
+            "name": "webinar_ssap",
+            "text": "Webinar: SUSE SAP联合解决方案(Chinese)"
+        },
+        {
+            "name": "salescast_caaspair",
+            "text": "Salescast: SAP and SUSE Solutions"
+        },
+        {
+            "name": "webinar_edge",
+            "text": "Webinar: SUSE边缘计算解决方案(Chinese)"
+        }
+    ],
+    "career":
+    [
+        {
+            "name": "SUSE",
+            "text": "SUSE",
+            "icon": "suse.png",
+            "start": "2018.06",
+            "end": "present",
+            "title": "Sales Engineer",
+            "projects":
+            [
+                {
+                    "name": "pre-sales",
+                    "text": "Pre-sales support for SUSE and Rancher products"
+                },
+                {
+                    "name": "enablement",
+                    "text": "Technical enablement for customers and partners"
+                },
+                {
+                    "name": "content",
+                    "text": "Create localized technical content for specific market"
+                },
+                {
+                    "name": "classroom",
+                    "text": "Deliver SUSE products classroom training"
+                }
+            ]
+        },
+        {
+            "name": "NRJ",
+            "text": "Ericsson Japan",
+            "icon": "ericsson.png",
+            "start": "2014.10",
+            "end": "2018.05",
+            "title": "Cloud Solution Architect",
+            "projects":
+            [
+                {
+                    "name": "nfv",
+                    "text": "Docomo NFV project"
+                },
+                {
+                    "name": "iaas",
+                    "text": "Openstack based enterprise private cloud"
+                }
+            ]
+        },
+        {
+            "name": "CBC",
+            "text": "Ericsson China",
+            "icon": "ericsson.png",
+            "start": "2011.07",
+            "end": "2014.09",
+            "title": "Integration Engineer",
+            "projects":
+            [
+                {
+                    "name": "si",
+                    "text": "2G，3G，LTE core network integration"
+                }
+            ]
+        }
+    ]
+}
